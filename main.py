@@ -85,7 +85,7 @@ title_label.grid(column=1, row=0)
 start_button = Button(text= "Start", command =start_timer)
 start_button.grid(column=0, row=2)
 
-reset_button = Button(text="Reset",command=reset_timer)
+reset_button = Button(text="Reset",command=reset_timer, state=DISABLED)
 reset_button.grid(column=2, row=2)
 
 tomato_img = PhotoImage(file = "tomato.png")
