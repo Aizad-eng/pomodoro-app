@@ -11,7 +11,8 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
-
+timer = None
+is_timer_running = False
 #RESETTING TIMER MECHANISM
 
 def reset_timer():
@@ -92,7 +93,7 @@ canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(103,130, text="00:00", fill="white", font=(FONT_NAME,35, "bold"))
 canvas.grid(column=1, row=1)
 
-check_marks = Label(fg = GREEN, bg = YELLOW, font=(FONT_NAME, 16, "bold"))
+check_marks = Label(fg = GREEN, bg = YELLOW, font=(FONT_NAME, 18, "bold"))
 check_marks.grid(column=1, row=2)
 
 window.mainloop()
