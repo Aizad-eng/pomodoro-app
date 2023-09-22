@@ -21,7 +21,7 @@ def reset_timer():
     if is_timer_running:
         window.after_cancel(timer)
         canvas.itemconfig(timer_text, text= "00:00")
-        title_label.config(text = "Timer")
+        title_label.config(text = "IDLE TIMER")
         check_marks.config(text = "")
         reps = 0
         is_timer_running = False
